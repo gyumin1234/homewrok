@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Python Link Example</title>
+</head>
+<body>
+    <h1>Welcome to my Python page!</h1>
+    <p>Here is a link to a Python-generated message: <a href="/">Click here</a></p>
+    <div class="container mt-5">
+        <h1>가위, 바위, 보 게임</h1>
+        <form action="C:\Users\DATE A LIVE\Desktop\sparta\homework\personal homework\homework/homework2.py" method="post">
+            <div class="form-group">
+                <label for="choice">선택하다: </label>
+                <select name="choice" id="choice" class="form-control">
+                    <option value="바위">바위</option>
+                    <option value="보">보</option>
+                    <option value="가위">가위</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">플레이</button>
+        </form>
+        <h2>통계</h2>
+        <p>총 게임수: {{ total_games }}</p>
+        <p>승리: {{ wins }}</p>
+        <p>동점: {{ ties }}</p>
+        <p>손실: {{ losses }}</p>
+        <h2>게임 기록</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>플레이어 선택</th>
+                    <th>컴퓨터 선택</th>
+                    <th>플레이어 한 결과</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for record in game_records %}
+                <tr>
+                    <td>{{ record[1] }}</td>
+                    <td>{{ record[2] }}</td>
+                    <td>{{ record[3] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
