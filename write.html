@@ -1,0 +1,112 @@
+<!-- write.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spartamarket(스파르타 중고마트 공식 홈페이지) 판매자 글쓰기 창</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- jQuery (Bootstrap의 JavaScript 플러그인을 위해 필요) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap Bundle JS (Popper.js 포함) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="sparta2.png"
+                    alt="로고" height="40" />
+                market</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <input type="search" class="form-control mr-sm-2" placeholder="검색" />
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-secondary" id="loginButton">
+                            로그인
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 메인 -->
+
+    <main class="writeform">
+        <h2 class="Wtitle">판매자 글쓰기</h2>
+        <form onsubmit="submitPost(event)">
+            <div class="form-group">
+                <label for="titleInput">제목</label>
+                <input type="text" class="form-control" id="titleInput" placeholder="제목 입력" />
+            </div>
+            <div class="form-group">
+                <label for="authorInput">작성자</label>
+                <input type="text" class="form-control" id="authorInput" placeholder="작성자 이름" />
+            </div>
+            <div class="form-group">
+                <label for="imageUpload">이미지 업로드</label>
+                <input type="file" class="form-control-file" id="imageUpload" />
+            </div>
+            <div class="form-group">
+                <label for="categorySelect">상품 종목</label>
+                <select class="form-control" id="categorySelect">
+                    <option>스니커즈</option>
+                    <option>등산/클라이밍</option>
+                    <option>스타굿즈</option>
+                    <option>자전거/전동퀵보드/전동휠</option>
+                    <option>오토바이/스쿠터</option>
+                    <option>피규어/인형</option>
+                    <option>게임기</option>
+                    <option>운동기구</option>
+                    <option>캠핑/여행</option>
+                    <option>카메라/DSLR</option>
+                    <option>휴대폰</option>
+                    <option>데스크탑PC/노트북/태블릿PC</option>
+                    <option>기타 통신기기</option>
+                    <option>라디오</option>
+                    <option>책</option>
+                    <option>가전</option>
+                    <option>차량용품</option>
+                    <option>기타용품</option>
+                    
+                    <!-- 추가 카테고리 옵션 -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contentTextarea">내용</label>
+                <textarea class="form-control" id="contentTextarea" rows="5" placeholder="내용 입력"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">등록</button>
+        </form>
+    </main>
+
+    <!-- 푸터 -->
+    <footer id="footer">
+        <div class="container py-4">
+            <div class="copyright">
+                spartamarket <strong><span>저희 중고장터에 오신 것을</span></strong>환영합니다!.
+                <div>관리자명: 이규민</div>
+                <div>문의 번호: 010-1234-5678</div>
+                <div>abcdefg@naver.com</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
